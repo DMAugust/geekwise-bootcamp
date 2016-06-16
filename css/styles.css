@@ -1,4 +1,6 @@
-/*GLOBAL STYLE*/
+
+
+/*================GLOBAL STYLE===============================*/
 
 html, body {
     height:100%;
@@ -22,11 +24,10 @@ h1, h2, h3 {
 }
 
 h1 {
-    /*font-size:2em;*/
-    font-size:6em;
+    font-size:2em;
 }
 
-p{
+p {
     color:#acacac;
     margin:15px 0px;
     line-height:40px;
@@ -41,36 +42,124 @@ a:hover {
     color:#bbffff;
 }
 
-/*HEADER STYLES*/
+figure{
+    padding:25px;
+    background-color:#3e3739;
+    display:inline-block;
+}
+
+figcaption{
+    text-align:center;
+    font-size:2em;
+    color:#FFFFFF;
+    border-radius:15px;
+    
+}
+
+main{
+    width:1200px;
+    overflow:hidden;
+}
+
+/*==============HEADER STYLES===============================================*/
+
 
 header {
-    position:absolute;
     height:100px;
-    background-color:#404040;
+    text-align:center;
 }
 
 #logo {
-    color:#AEAEAE;
+    color:#000000;
+    font-size:24px;
 }
 
 #logo:hover {
     color:#000000;
 }
 
-/*BANNER STYLES*/
+/*-------------------------BANNER STYLES----------------------------------------------*/
 
 #banner {
     overflow:hidden;
     padding:175px 0px;
     border-top:6px solid #404040;
     background-color:#AEAEAE;
-    background: url(../images/banner-home.jpg) no-repeat center center #404040;
+    background: url(../images/Geekwize-class2016.jpg) no-repeat center center #404040;
     background-size:cover;
+    height:10%;
 }
 
-#banner-text {
+#bannerText {
     color:#FFFFFF;
     font-size:6em;
     text-align:center;
-    text-shadow:6px 6px #000000;
+}
+
+.button2 {
+    background-color:#262626;
+	border-radius:6px;
+	padding:10px 25px;
+	text-decoration:none;
+	color:#FFFFFF;
+	display:inline-block;
+	font-weight:200;
+}
+
+/*===============NAV STYLES============================================================*/
+
+
+#menu{
+    position:absolute;
+    top:30px;
+    right:20px;
+}
+
+#menu ul li{
+    display:inline-block;
+    margin:0px 20px;
+}
+
+.currentPage{
+    color:#2B4E72;
+}
+
+
+ /*===============THREE COLUMNS==============================================================*/
+ 
+ 
+.column1, .column2, .column3{
+    width:384px;
+}
+
+.column2, .column3 {
+    float:left;
+    margin-right:24px;
+}
+
+.column3 {
+    float:left;
+    border:solid 1px #000000
+}
+
+.column1 h2, .column2 h2, .column3 h2 {
+    font-size:6em;
+    font-weight:300px;
+    text-align:center;
+    margin:10px 0px;
+}
+
+.column1 p, .column2 p, .column3 p,{
+    padding:0px;
+    text-align:justify;
+}
+
+.column1 span, .column2 span, .column3 span{
+    background-color:#404040;
+    color:#FFFFFF;
+    display:block;
+    font-size:1.75em;
+    font-weight:600px;
+    text-align:center;
+    padding:10px 0px;
 }
